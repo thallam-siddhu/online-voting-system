@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h1>🗳 Online Voting System</h1>
+
+<h2>Admin Dashboard</h2>
+
+<table border="1" cellpadding="10">
+    <tr>
+        <th>Candidate</th>
+        <th>Total Votes</th>
+    </tr>
+
+    <tr>
+        <td>Candidate A</td>
+        <td>{{ a }}</td>
+    </tr>
+
+    <tr>
+        <td>Candidate B</td>
+        <td>{{ b }}</td>
+    </tr>
+
+    <tr>
+        <td>Candidate C</td>
+        <td>{{ c }}</td>
+    </tr>
+
+</table>
+
+<br>
+
+<h3>Total Votes: {{ a + b + c }}</h3>
+
+<br>
+
+<a href="/reset">
+    <button>Reset Election</button>
+</a>
+
+<br><br>
+
+<a href="/logout">
+    <button>Logout</button>
+</a>
+
+</div>
+
+</body>
+</html>

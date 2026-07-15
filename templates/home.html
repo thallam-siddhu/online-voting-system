@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Voting System</title>
+</head>
+<body>
+
+<h1>🗳 Online Voting System</h1>
+<h2>Welcome to Voting</h2>
+
+<form action="/vote" method="POST">
+
+    <h3>Select Your Candidate</h3>
+
+    <input type="radio" name="candidate" value="Candidate A" required>
+    Candidate A
+    <br><br>
+
+    <input type="radio" name="candidate" value="Candidate B">
+    Candidate B
+    <br><br>
+
+    <input type="radio" name="candidate" value="Candidate C">
+    Candidate C
+    <br><br>
+
+    <button type="submit">Vote Now</button>
+
+</form>
+
+<br>
+
+<a href="/logout">
+    <button>Logout</button>
+</a>
+
+</body>
+</html>
